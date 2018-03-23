@@ -14,7 +14,10 @@ MRuby::Build.new do |conf|
   # include the default GEMs
   conf.gembox 'default'
   conf.gem File.expand_path(File.dirname(__FILE__))
-  conf.gem :github => 'matsumoto-r/mruby-sleep'
+  conf.gem github: 'matsumoto-r/mruby-sleep'
+  conf.gem github: 'iij/mruby-process'
+  conf.gem github: 'matsumoto-r/mruby-sleep'
+  conf.gem github: 'haconiwa/mruby-exec'
   conf.enable_test
 
   # C compiler settings
